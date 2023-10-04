@@ -30,7 +30,7 @@ public class ProyectoJava3 {
         boolean menorque = operador1 < operador2;
         System.out.println("La comparacion es "+menorque);
         
-        boolean mayorque = operador1 < operador2;
+        boolean mayorque = operador1 > operador2;
         System.out.println("La comparacion es "+mayorque);
         
     }
