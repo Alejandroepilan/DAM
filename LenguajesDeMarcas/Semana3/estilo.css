@@ -36,6 +36,7 @@ body {
 h1 {
   font-family: goldLines;
   font-size: 40px;
+  border-bottom: 1px solid black;
 }
 
 h2 {
@@ -128,6 +129,20 @@ nav ul li:hover {
 }
 
 
+#highlights article {
+  width: 50%;
+  float: left;
+}
+
+#highlights article img {
+  width: 100%;
+}
+
+#highlights article .contienearticulo {
+  padding: 10px;
+}
+
+
 #blog article {
   width: 25%;
   float: left;
@@ -135,4 +150,8 @@ nav ul li:hover {
 
 #blog article img {
   width: 100%;
+}
+
+#blog article .contienearticulo {
+  padding: 10px;
 }
