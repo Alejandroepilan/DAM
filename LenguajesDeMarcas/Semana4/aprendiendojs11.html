@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+
+    <style></style>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        document.getElementById("calendario").innerHTML = "Hola";
+        $("#pulsame").click(function () {
+          console.log("Has pulsado el boton");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="calendario"></div>
+    <button id="pulsame">Pulsame si te atreves</button>
+  </body>
+</html>
