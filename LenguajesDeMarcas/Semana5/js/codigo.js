@@ -49,15 +49,16 @@ $(document).ready(function () {
   });
 
   $("article").click(function () {
-    $(".detalles").removeClass("abierto");
-    $(".detalles").removeClass("muyabierto");
+    $(this).parent().parent().next().removeClass("abierto");
+    $(this).parent().parent().next().removeClass("muyabierto");
+    var este = $(this);
     setTimeout(() => {
-      $(".detalles").addClass("abierto");
+      este.parent().parent().next().find("h2").text(titulo);
+      este.parent().parent().next().find("h3").text(subtitulo);
+      este.parent().parent().next().find("p").text(descripcion);
+      este.parent().parent().next().find("img").attr("src", imagen);
 
-      $(".detalles h2").text(titulo);
-      $(".detalles h3").text(subtitulo);
-      $(".detalles p").text(descripcion);
-      $(".detalles img").attr("src", imagen);
+      este.parent().parent().next().addClass("abierto");
     }, 500);
 
     var titulo = "";
@@ -87,6 +88,6 @@ $(document).ready(function () {
   });
 
   $(".masinfo").click(function () {
-    $(".detalles").addClass("muyabierto");
+    $(this).parent().addClass("muyabierto");
   });
 });
