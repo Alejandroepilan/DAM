@@ -5,7 +5,6 @@ import java.awt.Graphics2D;
 import java.awt.RenderingHints;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-import java.util.Random;
 
 public class ProyectoJava23 extends JPanel {
     int numerobolas = 230;

@@ -2,9 +2,11 @@ $(document).ready(function () {
   $("section article").hover(function () {
     $(this).addClass("aumentado");
   });
+
   $("section article").mouseout(function () {
     $(this).removeClass("aumentado");
   });
+
   $(".anterior").click(function () {
     var midesfase = 0;
     $(this)
@@ -26,6 +28,7 @@ $(document).ready(function () {
         $(this).css("left", midesfase + "px");
       });
   });
+
   $(".posterior").click(function () {
     var midesfase = 0;
     $(this)
