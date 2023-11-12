@@ -1,5 +1,5 @@
 <?php
-$enlace = mysqli_connect("localhost", "root", "", "cursoaplicacionesweb");
+$enlace = mysqli_connect("localhost", "root", "", "basesdedatos");
 $peticion = "DELETE FROM usuarios WHERE Identificador = " . $_GET['id'] . "";
 $resultado = mysqli_query($enlace, $peticion);
 

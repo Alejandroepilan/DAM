@@ -31,3 +31,4 @@ $juan = new Persona();
 $juan->diHola();
 $juan->getNombre();
 $juan->getNombre("Antonio");
+$juan->getNombre();

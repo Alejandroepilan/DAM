@@ -1,5 +1,5 @@
 <?php
-$enlace = mysqli_connect("localhost", "root", "", "cursoaplicacionesweb");
+$enlace = mysqli_connect("localhost", "root", "", "basesdedatos");
 $peticion = "
 INSERT INTO usuarios VALUES(
   NULL,

@@ -3,7 +3,7 @@ session_start();
 echo "Usuario: " . $_POST['usuario'] . "<br>";
 echo "Contraseña: " . $_POST['contrasena'] . "<br>";
 
-$enlace = mysqli_connect("localhost", "root", "", "cursoaplicacionesweb");
+$enlace = mysqli_connect("localhost", "root", "", "basesdedatos");
 $peticion = "
 SELECT * FROM usuarios
 WHERE usuario = '" . $_POST['usuario'] . "'

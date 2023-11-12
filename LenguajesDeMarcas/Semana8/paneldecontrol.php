@@ -60,7 +60,7 @@
       <th>Apellidos</th>
     </tr>
     <?php
-    $enlace = mysqli_connect("localhost", "root", "", "cursoaplicacionesweb");
+    $enlace = mysqli_connect("localhost", "root", "", "basesdedatos");
     $peticion = "SELECT * FROM usuarios";
     $resultado = mysqli_query($enlace, $peticion);
 

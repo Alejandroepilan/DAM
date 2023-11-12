@@ -18,7 +18,7 @@ public class SQLite {
         String nios = "";
         
         try {
-            String ruta = "jdbc:sqlite:C:/Users/aepila/Desktop/DBSemana5/registros.db";
+            String ruta = "jdbc:sqlite:C:/Users/aleja/Desktop/DAM/SQLite/Semana5/registros.db";
             conexion = DriverManager.getConnection(ruta);
             
             Statement peticion = conexion.createStatement();

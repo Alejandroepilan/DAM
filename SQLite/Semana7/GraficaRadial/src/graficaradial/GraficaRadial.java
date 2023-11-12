@@ -14,7 +14,7 @@ import java.util.Random;
 public class GraficaRadial extends JPanel {
     
     private Connection connect() throws SQLException {
-        String url = "jdbc:sqlite:C:/Users/aepila/Desktop/DBSemana7/registros.db";
+        String url = "jdbc:sqlite:C:/Users/aleja/Desktop/DAM/SQLite/Semana7/registros.db";
         Connection conn = null;
         try {
             conn = DriverManager.getConnection(url);

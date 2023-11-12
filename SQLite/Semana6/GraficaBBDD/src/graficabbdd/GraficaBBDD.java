@@ -8,7 +8,7 @@ import java.sql.*;
 public class GraficaBBDD extends JPanel {
     
     private Connection connect() throws SQLException {
-        String url = "jdbc:sqlite:C:/Users/aepila/Desktop/DBSemana6/registros.db";
+        String url = "jdbc:sqlite:C:/Users/aleja/Desktop/DAM/SQLite/Semana6/registros.db";
         Connection conn = null;
         try {
             conn = DriverManager.getConnection(url);
@@ -44,7 +44,7 @@ public class GraficaBBDD extends JPanel {
         
         for(int i = 0; i < barras.length; i++) {
             int alturabarra = barras[i];
-            misgraficos.fillRect(i*30+20, basegrafica-alturabarra, 20, alturabarra);            
+            misgraficos.fillRect(i*30+20, basegrafica-alturabarra, 20, alturabarra);
         }
     }
 

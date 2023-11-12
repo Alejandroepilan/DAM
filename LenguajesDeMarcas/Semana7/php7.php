@@ -1,8 +1,5 @@
 <?php
 
-echo "Que sepas que el usuario que has enviado es" . $_POST['usuario'] . "<br>";
-echo "Que sepas que el password que has enviado es" . $_POST['password'] . "<br>";
-
 $enlace = mysqli_connect("localhost", "root", "", "basesdedatos");
 
 $peticion = "
