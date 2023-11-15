@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
     
-<%@ page import = "java.io.File" %>
+<%@ page import = "java.io.FileWriter" %>
 <%@ page import = "java.io.IOException" %>
 
 <!DOCTYPE html>
@@ -16,15 +16,15 @@
 	String apellido = request.getParameter("apellido");
 	String email = request.getParameter("email");
 	String telefono = request.getParameter("telefono");
+	String resultado = nombre + " | " + apellido + " | " + email + " | " + telefono;
+	out.println(resultado);
 	
 	try {
-		File myObj = new File("filename.txt");
-		if (myObj.createNewFile()) {
-			out.println("Archivo: " + myObj.getName());
-		} else {
-			out.println("El archivo ya existe");
-		}
+		FileWriter myWriter = new FileWriter("filename.txt");
+		myWriter.write(resultado);
+		myWriter.close();
 	} catch (IOException e) {
+		out.println("Ha ocurrido un error.");
 		e.printStackTrace();
 	}
 	%>
