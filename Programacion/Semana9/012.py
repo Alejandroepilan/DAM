@@ -7,7 +7,7 @@ print("Dime tu edad")
 edad = input()
 print("Tu nombre es", nombre, ", Tu edad es de", edad, "años")
 
-edad = 15
+edad = 40
 
 if edad < 30:
   print("Eres una persona joven")

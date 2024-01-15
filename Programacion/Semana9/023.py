@@ -1,3 +1,3 @@
 agenda = ["Alejandro Epila", "Juan", "Jorge", "Jose"]
 
-print(agenda[3])
+print(agenda[0])

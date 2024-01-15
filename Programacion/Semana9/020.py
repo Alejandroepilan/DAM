@@ -1,4 +1,4 @@
-dia = "longaniza"
+dia = "dfghnnfdgh"
 
 if dia == 'lunes':
   print("hoy es el peor dia de la semana")
