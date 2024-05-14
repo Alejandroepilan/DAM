@@ -4,6 +4,7 @@
   por Alejandro Épila
 */
 #include <stdio.h>
+#include <string.h>
 #define PI 3.1416
 #define NOMBREPROGRAMA "Programa agenda"
 #define VERSION "1.2"
@@ -11,7 +12,24 @@
 
 int main(int argc, char *argv[])
 {
-  // Mensaje de bienvenida
+
+  struct RegistroAgenda
+  {
+    char nombre[50];
+    char apellidos[50];
+    char correo[50];
+    char telefono[50];
+    char direccion[50];
+  };
+
+  struct RegistroAgenda agenda[100];
+  strcpy(agenda[0].nombre, "Jose Vicente");
+  strcpy(agenda[0].apellidos, "Carratala");
+  strcpy(agenda[1].nombre, "Juan");
+  strcpy(agenda[1].apellidos, "Lopez");
+  strcpy(agenda[2].nombre, "Jaime");
+  strcpy(agenda[2].apellidos, "Martinez");
+
   printf("%s v%s \n", NOMBREPROGRAMA, VERSION);
   printf("por %s \n", AUTOR);
   printf("Selecciona una opcion: \n");
@@ -28,6 +46,14 @@ int main(int argc, char *argv[])
   {
   case '1':
     printf("A continuacion te ofrezco un listado de registros \n");
+    for (int i = 0; i < 10; i = i + 1)
+    {
+      if (strcmp(agenda[i].nombre, ""))
+      {
+        printf("El nombre es: %s\n", agenda[i].nombre);
+        printf("El apellido es: %s\n", agenda[i].apellidos);
+      }
+    }
     break;
   case '2':
     printf("Ahora vamos a introducir un registro \n");
